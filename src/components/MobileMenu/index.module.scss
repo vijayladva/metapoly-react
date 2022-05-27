@@ -1,0 +1,25 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.mobileMenu {
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.mobileMenuBtn {
+    padding: 5px;
+
+    img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}

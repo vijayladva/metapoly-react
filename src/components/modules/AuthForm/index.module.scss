@@ -1,0 +1,16 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/mixins';
+
+.authForm {
+    @include wrapper();
+    max-width: 270px;
+    width: 100%;
+}
+
+.authFormTitle {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}

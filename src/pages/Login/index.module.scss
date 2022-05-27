@@ -1,0 +1,14 @@
+@import "../../assets/styles/vars";
+@import "../../assets/styles/mixins";
+
+.login {
+  @include centerFlex();
+  height: 100%;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.loader {
+  @include centerFlex();
+  margin-top: 10px;
+}

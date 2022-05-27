@@ -1,0 +1,73 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.placeInfo {
+
+}
+
+.placeInfoTop {
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 3px rgba($black, .06);
+}
+
+.placeInfoClose {
+    position: absolute;
+    right: 5px;
+    top: -2px;
+}
+
+.placeInfoName {
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.placeInfoType {
+    color: $gray;
+}
+
+.placeInfoIcon {
+    position: absolute;
+    left: 5px;
+    width: 25px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.placeInfoContent {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.placeInfoPrice {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.placeInfoProfit {
+    font-size: 12px;
+    max-width: 150px;
+    color: $gray;
+    margin: 0 auto 20px;
+
+    span {
+        color: $green;
+        font-weight: 500;
+    }
+}
+
+.placeInfoBtn {
+    margin: 0 auto;
+}
+
+.placeInfoNoRate {
+    color: $red;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,0 +1,215 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.userInfo {
+
+}
+
+.userInfoClose {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+}
+
+.userInfoBtnsWrap {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.userInfoSettings {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all .15s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &:hover {
+        transform: rotate(40deg);
+    }
+}
+
+.userInfoFaqBtn {
+    margin-left: 10px;
+    cursor: pointer;
+
+    svg {
+        margin-bottom: -2px;
+        width: 30px;
+        height: 30px;
+    }
+
+    path {
+        transition: all .15s;
+    }
+
+    &:hover {
+        path {
+            fill: $yellowDarker;
+        }
+    }
+}
+
+.userInfoTitle {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0 40px;
+}
+
+.userInfoAva {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid $yellow;
+    margin: 0 auto 15px;
+}
+
+.userInfoName {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.userInfoMoney {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.userInfoMoneyItem {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+
+    & + & {
+        margin-left: 20px;
+    }
+
+    span {
+        display: block;
+        color: $green;
+        margin-top: 5px;
+        font-weight: 700;
+    }
+}
+
+.userInfoSubtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.userInfoProperties {
+
+}
+
+.userInfoBusiness {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    & + & {
+        border-top: 1px solid $grayLighter;
+    }
+}
+
+.userInfoBusinessWrap {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex-grow: 1;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.userInfoBusinessIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+
+    @media (max-width: 500px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.userInfoBusinessName {
+    font-size: 14px;
+}
+
+.userInfoBusinessMoney {
+    flex-shrink: 0;
+    width: 70px;
+    color: $green;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+
+    @media (max-width: 500px) {
+        width: 60px;
+        font-size: 12px;
+    }
+}
+
+.userInfoBusinessBtn {
+    margin: 0 10px;
+    padding: 8px 30px;
+    min-width: unset;
+    font-size: 14px;
+
+    @media (max-width: 500px) {
+        padding: 5px 20px;
+        font-weight: 500;
+    }
+}
+
+.userInfoChart {
+    padding: 10px 15px;
+    width: calc(100% - 20px);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0 auto 15px;
+}
+
+.userInfoHeader {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: $gray;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $grayLighter;
+}
+
+.userInfoHeaderGamer {
+    padding-right: 105px;
+}
+
+.userInfoHeaderItemName {
+    flex-grow: 1;
+}
+
+.userInfoHeaderItemValue {
+    width: 70px;
+    text-align: center;
+}

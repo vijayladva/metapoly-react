@@ -1,0 +1,26 @@
+@import './vars';
+
+@mixin wrapper {
+    background: $white;
+    box-shadow: 0 4px 4px rgba($black, 0.25);
+    border-radius: 20px;
+    padding: 25px 20px;
+}
+
+@mixin centerElement {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bg($size: contain) {
+    background-size: $size;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

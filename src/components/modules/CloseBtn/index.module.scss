@@ -1,0 +1,41 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/mixins';
+
+.closeBtn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        @include centerElement;
+        display: block;
+        background-color: $black;
+        width: 3px;
+        height: 25px;
+        border-radius: 2px;
+        transition: all .15s;
+
+        &:first-child {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    &:hover {
+        span {
+            background-color: $red;
+
+            &:first-child {
+                transform: translate(-50%, -50%) rotate(50deg);
+            }
+
+            &:last-child {
+                transform: translate(-50%, -50%) rotate(-50deg);
+            }
+        }
+    }
+}

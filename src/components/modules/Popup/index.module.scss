@@ -1,0 +1,102 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/mixins';
+
+.popup {
+    position: absolute;
+    @include centerElement;
+    border-radius: 12px;
+    padding: 15px 0 0;
+    background-color: $white;
+    z-index: 20;
+    animation: .15s showInfo forwards;
+    box-shadow: 0 3px 10px rgba($black, .3);
+    max-width: 300px;
+    width: 100%;
+
+    @keyframes showInfo {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    //@media (max-width: 500px) {
+    //    max-width: unset;
+    //    width: 100%;
+    //    border-radius: 0;
+    //}
+}
+
+.popupUser {
+    max-width: 460px;
+    padding: 15px 10px 15px;
+
+    @media (max-width: 768px) {
+        height: calc(100% - 40px);
+        top: 0;
+        left: unset;
+        right: 0;
+        transform: unset;
+        animation: unset;
+        border-radius: 0;
+
+        .popupInner {
+            max-height: 100%;
+            padding-bottom: 5px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+.popupGamer {
+    left: unset;
+    right: 0;
+    top: 0;
+    animation: .15s showGamerInfo forwards;
+    border-radius: 0 0 0 12px;
+    z-index: 15;
+
+    @keyframes showGamerInfo {
+        0% {
+            transform: translateX(100%) scaleX(0);
+        }
+
+        50% {
+            transform: translateX(50%) scaleX(0);
+        }
+
+        100% {
+            transform: translateX(0) scaleX(1);
+        }
+    }
+
+    @media (max-width: 500px) {
+        border-radius: 0;
+        height: calc(100% - 40px);
+    }
+}
+
+.popupInner {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $grayLighter;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $yellow;
+    }
+}

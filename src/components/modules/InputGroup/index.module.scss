@@ -1,0 +1,55 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/mixins';
+
+.inputGroup {
+    position: relative;
+
+    & + & {
+        margin-top: 40px;
+    }
+}
+
+.inputGroupSmallMargin {
+    & + & {
+        margin-top: 20px;
+    }
+}
+
+.inputGroupLabel {
+    color: $gray;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.inputGroupInput {
+    padding: 5px 10px;
+    border-bottom: 2px solid $yellow;
+    width: 100%;
+
+    &::placeholder {
+        color: $black;
+    }
+}
+
+.inputGroupInputDisabled {
+    pointer-events: none;
+    background-color: $grayLighter;
+    user-select: none;
+}
+
+.inputGroupForgot {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    color: $gray;
+    font-weight: 700;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.errorMessage {
+    color: $red;
+    margin-top: 5px;
+    padding-left: 10px;
+}
